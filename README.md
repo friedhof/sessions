@@ -24,11 +24,12 @@ In this talk I show the sense of Web Components and explain why web developers n
 
 To fully understand this talk the attendees should have basic knowledge of HTML, CSS and JavaScript. After the talk all attendees get a link to download the slides and source files of the live coding part.
 
------------ | -------------
-Duration:   | ~ 45 minutes
-Attendance: | 8+ attendees
-Audience:   | web engineers
-Level:      | beginner
-Handout:    | slides, source files
+|             |                      |
+| ----------- | -------------------- |
+| Duration:   | ~ 45 minutes         |
+| Attendance: | 8+ attendees         |
+| Audience:   | web engineers        |
+| Level:      | beginner             |
+| Handout:    | slides, source files |
 
 [https://www.fihlon.ch/talks/webcomponents/](https://www.fihlon.ch/talks/webcomponents/)
