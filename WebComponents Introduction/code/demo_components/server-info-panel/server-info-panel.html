@@ -1,0 +1,58 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html" />
+<link rel="import" href="../../bower_components/paper-card/paper-card.html" />
+<link rel="import" href="../../bower_components/paper-progress/paper-progress.html" />
+
+<dom-module id="server-info-panel">
+    <template>
+        <style>
+            paper-card {
+                margin: 10px;
+                padding: 5px;
+                width: 300px;
+                --paper-card-header-image-text : {
+                    color: #ffffff;
+                    font-size: 30px;
+                    text-align: center;
+                    left: 0;
+                    right: 0;
+                }
+            }
+            label {
+                display: inline-block;
+                width: 80px;
+            }
+            paper-progress {
+                display: inline-block;
+                width: 200px;
+            }
+        </style>
+
+        <paper-card header-color="#ff0000" heading="{{serverdata.name}}"
+                    image="/code/images/{{serverdata.name}}.jpg">
+            <label>IP:</label>
+                {{serverdata.ip}}<br/>
+            <label>CPU:</label>
+                <paper-progress value="{{serverdata.cpu}}"></paper-progress><br/>
+            <label>Memory:</label>
+                <paper-progress value="{{serverdata.memory}}"></paper-progress><br/>
+            <label>Disk:</label>
+                <paper-progress value="{{serverdata.disk}}"></paper-progress><br/>
+        </paper-card>
+    </template>
+
+    <script>
+        Polymer({
+            is: "server-info-panel",
+            properties: {
+                serverdata: {
+                    type: Object,
+                    value: null
+                }
+            }
+        });
+    </script>
+</dom-module>
+
+
+
+

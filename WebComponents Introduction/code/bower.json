@@ -1,0 +1,24 @@
+{
+  "name": "demo",
+  "authors": [
+    "Marcus Fihlon <marcus@fihlon.ch>"
+  ],
+  "description": "WebComponents Demo Project",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "AGPL",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "iron-ajax": "PolymerElements/iron-ajax#^1.2.0",
+    "paper-card": "PolymerElements/paper-card#^1.1.1",
+    "paper-progress": "PolymerElements/paper-progress#^1.0.9"
+  }
+}

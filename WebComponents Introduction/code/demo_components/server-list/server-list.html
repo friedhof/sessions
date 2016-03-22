@@ -1,0 +1,21 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html"/>
+<link rel="import" href="../../bower_components/iron-ajax/iron-ajax.html"/>
+<link rel="import" href="../server-info-panel/server-info-panel.html"/>
+
+<dom-module id="server-list">
+    <template>
+        <iron-ajax auto url="/code/api/metrics.json" handle-as="json"
+                   last-response="{{ajaxResponse}}"></iron-ajax>
+        <template is="dom-repeat" items="[[ajaxResponse]]">
+            <server-info-panel serverdata="{{item}}"></server-info-panel>
+        </template>
+    </template>
+
+    <script>
+        Polymer({
+            is: "server-list"
+        });
+    </script>
+</dom-module>
+
+

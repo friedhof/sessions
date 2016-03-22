@@ -1,0 +1,255 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !BIB TS-program = biber
+
+\documentclass{beamer}
+\usepackage[cm-default,no-math]{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage[utf8x]{inputenc}
+\usepackage{listings}
+\usepackage{hyperref} 
+\usepackage{adjustbox}
+\usepackage{tcolorbox}
+\usepackage{pdfpages}
+\usepackage{multicol}
+\usepackage{cancel}
+\usepackage[autostyle=true,german=quotes]{csquotes}
+\usepackage{pifont}
+\usepackage{color}
+
+\usetheme{m} % Use metropolis theme
+
+
+\definecolor{pblue}{rgb}{0.13,0.13,1}
+\definecolor{pgreen}{rgb}{0,0.5,0}
+\definecolor{pred}{rgb}{0.9,0,0}
+\definecolor{pgrey}{rgb}{0.46,0.45,0.48}
+
+\usepackage{listings}
+\lstset{language=Java,
+  frame=single,
+  showspaces=false,
+  showtabs=false,
+  breaklines=true,
+  numbers=left,
+  showstringspaces=false,
+  breakatwhitespace=true,
+  commentstyle=\color{pgreen},
+  keywordstyle=\color{pblue},
+  tabsize=4,
+  xleftmargin=8pt,
+  stringstyle=\color{pred},
+  basicstyle=\footnotesize\ttfamily,
+  moredelim=[il][\textcolor{pgrey}]{$$},
+  moredelim=[is][\textcolor{pgrey}]{\%\%}{\%\%}
+}
+
+\setbeamertemplate{itemize items}[square]
+\setbeamercovered{transparent}
+
+%% Commands
+
+\newcommand{\code}[1]{\texttt{#1}}
+
+\newcommand{\listing}[1]{
+	\begin{itemize}
+		\item[]\lstinputlisting[]{listings/#1}
+	\end{itemize}
+}
+
+\graphicspath{ {./images/} }
+\newcommand{\myfig}[2]{
+	\begin{minipage}[c]{\textwidth}
+		\begin{center}
+			\includegraphics[keepaspectratio,width=#2\textwidth]{#1}
+		\end{center}
+		\vspace{3mm}
+	\end{minipage}
+}
+
+\newcommand{\bb}[1]{\textbf{#1}}
+
+\newcommand{\slideItems}[1]{
+	\begin{itemize}
+		#1
+	\end{itemize}
+}
+
+\newcommand{\slide}[2]{
+	\begin{frame}{#1}
+		#2
+	\end{frame}
+}
+
+%% Document
+
+\title{WebComponents}
+\subtitle{Introduction}
+\author{\href{https://www.fihlon.ch/}{Marcus Fihlon}}
+\institute[Fihlon]{\href{https://www.fihlon.ch/}{Scrum Master | Software Engineer | Instructor}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\newlength\someheight
+
+\slide{About Me}{
+	\begin{columns}
+    	\begin{column}{5cm}
+		\slideItems{
+			\item Scrum Master
+			\item Software Engineer
+			\item Instructor
+			\item Speaker
+		}
+    	\end{column}
+	    \begin{column}{5cm}
+        	\myfig{McPringle}{0.8}
+    	\end{column}
+	\end{columns}
+	\href{https://www.fihlon.ch}{www.fihlon.ch} |
+	\href{https://github.com/McPringle}{github.com/McPringle} |
+	\href{http://hackergarten.net}{hackergarten.net}
+}
+
+\slide{Agenda}{
+	\setcounter{tocdepth}{1}
+	\tableofcontents
+}
+
+\section{Intro}
+
+\slide{Intro}{
+	\slideItems{
+		\item New W3C Standard
+		\item Allows reuse of components
+		\item The standard is divided into four specifications:
+			\slideItems{
+				\item Templates
+				\item Shadow DOM
+				\item Custom Elements
+				\item Imports
+			}
+		\item A Web Component uses well-known technologies:
+			\slideItems{
+				\item HTML
+				\item CSS
+				\item JavaScript
+			}
+	}
+}
+
+\section{Specifications}
+
+\subsection{Templates}
+
+\slide{Templates}{
+	\slideItems{
+		\item Defines HTML parts to be reused any number of times
+		\item Define reusable parts directly inside of HTML documents
+		\item Is defined by the new \code{<template>} tag
+		\item Can be added to the DOM using JavaScript
+		\item Unlimited number of templates possible
+	}
+	\listing{template.html}
+}
+
+\subsection{Shadow DOM}
+
+\slide{Shadow DOM}{
+	\slideItems{
+		\item Create an independent sub-DOM
+		\item Not accessable from ``outside'' of the sub-DOM
+		\item Avoids DOM collisions between components
+		\item No side-effects of CSS or JavaScript between components
+		\item Can be added to the DOM using JavaScript
+		\item Unlimited number of Shadow DOMs possible
+	}
+	\myfig{shadow_dom.png}{.6}
+}
+
+\subsection{Custom Elements}
+
+\slide{Custom Elements}{
+	\slideItems{
+		\item Connect template and shadow DOM
+		\item Define reusable components
+		\item Create own tags to produce readable HTML \\ \ding{213} own tags need to include a hyphen
+		\item Apply styles inside of the custom element
+		\item Use JavaScript for interaction
+		\item Throws lifecycle events: create, attach, detach
+	}
+	\listing{custom_element.html}
+	\myfig{custom_element.png}{.5}
+}
+
+\subsection{Imports}
+
+\slide{Imports}{
+	\slideItems{
+		\item Outsourcing of HTML parts
+		\item Create own HTML files for components (higher reusability)
+		\item Add components to HTML documents using imports
+	}
+	\listing{import.html}
+	\myfig{import.png}{.5}
+}
+
+\section{Status}
+
+\slide{Status}{
+	\begin{center}
+		\begin{tabular}{ l || c | c | c | c | c }
+			& \tiny{Chrome} & \tiny{Opera} & \tiny{Firfox} & \tiny{Safari} & \tiny{IE/Edge} \\
+			\hline
+			\hline
+			\tiny{Templates} & \textcolor{green}{\ding{52}} & \textcolor{green}{\ding{52}} & \textcolor{green}{\ding{52}} & \textcolor{green}{\ding{52}} & \textcolor{green}{\ding{52}} \\
+			\tiny{Shadow DOM} & \textcolor{green}{\ding{52}} & \textcolor{green}{\ding{52}} & \textcolor{yellow}{\ding{115}} & \textcolor{yellow}{\ding{115}} & \textcolor{red}{\ding{56}} \\
+			\tiny{Custom Elements} & \textcolor{green}{\ding{52}} & \textcolor{green}{\ding{52}} & \textcolor{yellow}{\ding{115}} & \textcolor{red}{\ding{56}} & \textcolor{red}{\ding{56}} \\
+			\tiny{Imports} & \textcolor{green}{\ding{52}} & \textcolor{green}{\ding{52}} & \textcolor{yellow}{\ding{115}} & \textcolor{red}{\ding{56}} & \textcolor{red}{\ding{56}} \\
+			\hline
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	Polyfills
+	\listing{polyfills.sh}
+	
+	Libraries
+	\slideItems{
+		\item \href{https://www.polymer-project.org/}{Polymer}
+		\item \href{https://x-tag.github.io/}{X-Tag}
+		\item \href{https://bosonic.github.io/}{Bosonic}
+	}
+}
+
+\section{Demo}
+
+\section{Wrap-up}
+
+\slide{Conclusion}{
+	Web Components…
+	\slideItems{
+		\item are \bb{declarative} and \bb{reuseable}
+		\item are \bb{combinable} and \bb{extensible}
+		\item are \bb{interoperational} -- DOM = common demoninator
+		\item allow \bb{encapsulation} -- scoping
+		\item increase \bb{productivity} and \bb{accessibility}
+		\item are \bb{standard}
+		\item support \bb{thinking in components}
+	}
+}
+
+\slide{Questions}{
+	\myfig{question.png}{1}
+	\tiny{\href{https://www.flickr.com/photos/86530412@N02/17078225817}{3D Question Mark by Chris Potter}}
+}
+
+\slide{The End}{
+	\myfig{thanks}{1}
+	\tiny{\href{https://www.flickr.com/photos/wwworks/4759535950}{thank you note for every language by woodleywonderworks}}
+}
+
+\end{document}

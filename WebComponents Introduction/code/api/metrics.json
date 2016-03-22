@@ -1,0 +1,51 @@
+[
+  {
+    "name" : "Merkur",
+    "ip" : "192.168.192.101",
+    "cpu" : 67,
+    "memory" : 83,
+    "disk" : 37
+  },
+  {
+    "name" : "Venus",
+    "ip" : "192.168.192.102",
+    "cpu" : 16,
+    "memory" : 43,
+    "disk" : 2422
+  },
+  {
+    "name" : "Erde",
+    "ip" : "192.168.192.103",
+    "cpu" : 92,
+    "memory" : 56,
+    "disk" : 56
+  },
+  {
+    "name" : "Mars",
+    "ip" : "192.168.192.104",
+    "cpu" : 21,
+    "memory" : 34,
+    "disk" : 31
+  },
+  {
+    "name" : "Jupiter",
+    "ip" : "192.168.192.105",
+    "cpu" : 55,
+    "memory" : 67,
+    "disk" : 29
+  },
+  {
+    "name" : "Uranus",
+    "ip" : "192.168.192.106",
+    "cpu" : 43,
+    "memory" : 98,
+    "disk" : 19
+  },
+  {
+    "name" : "Neptun",
+    "ip" : "192.168.192.107",
+    "cpu" : 77,
+    "memory" : 12,
+    "disk" : 26
+  }
+]
