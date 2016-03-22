@@ -17,6 +17,7 @@
 \usepackage[autostyle=true,german=quotes]{csquotes}
 \usepackage{pifont}
 \usepackage{color}
+\usepackage{qrcode}
 
 \usetheme{m} % Use metropolis theme
 
@@ -248,8 +249,16 @@
 }
 
 \slide{The End}{
-	\myfig{thanks}{1}
-	\tiny{\href{https://www.flickr.com/photos/wwworks/4759535950}{thank you note for every language by woodleywonderworks}}
+	\begin{columns}
+    	\begin{column}{6cm}
+			\myfig{thanks}{1}
+			\tiny{\href{https://www.flickr.com/photos/wwworks/4759535950}{thank you note for every language by woodleywonderworks}}
+    	\end{column}
+	    \begin{column}{4cm}
+			\qrcode[hyperlink,height=3.7cm]{https://github.com/McPringle/sessions}
+			\tiny{\href{https://github.com/McPringle/sessions}{https://github.com/McPringle/sessions}}
+    	\end{column}
+	\end{columns}
 }
 
 \end{document}
