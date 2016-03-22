@@ -1,0 +1,9 @@
+bower_components
+.idea
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.synctex.gz
+*.toc
