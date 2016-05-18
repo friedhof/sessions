@@ -1,0 +1,11 @@
+:root {
+	--form-styles: {
+		border: 1px dotted grey;
+		font-size: 0.8em;
+		margin: 1.2em;
+	}
+}
+
+form {
+	@apply(--form-styles);
+}
