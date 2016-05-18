@@ -1,5 +1,5 @@
-*WebComponents Introduction*
-============================
+*Web Components Introduction*
+=============================
 
 **Web Components are a set of standards currently being produced by Google engineers as a W3C specification that allow for the creation of reusable widgets or components in web documents and web applications. The intention behind them is to bring component-based software engineering to the World Wide Web. The components model allows for encapsulation and interoperability of individual HTML elements.** ([Wikipedia](https://en.wikipedia.org/wiki/Web_Components))
 
