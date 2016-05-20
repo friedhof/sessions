@@ -1,0 +1,214 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !BIB TS-program = biber
+
+\documentclass{beamer}
+\usepackage[cm-default,no-math]{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage[utf8x]{inputenc}
+\usepackage{listings}
+\usepackage{hyperref} 
+\usepackage{adjustbox}
+\usepackage{tcolorbox}
+\usepackage{pdfpages}
+\usepackage{multicol}
+\usepackage{cancel}
+\usepackage[autostyle=true,german=quotes]{csquotes}
+\usepackage{pifont}
+\usepackage{color}
+\usepackage{qrcode}
+
+\usetheme{m} % Use metropolis theme
+
+
+\definecolor{pblue}{rgb}{0.13,0.13,1}
+\definecolor{pgreen}{rgb}{0,0.5,0}
+\definecolor{pred}{rgb}{0.9,0,0}
+\definecolor{pgrey}{rgb}{0.46,0.45,0.48}
+
+\usepackage{listings}
+\lstset{language=Java,
+  frame=single,
+  showspaces=false,
+  showtabs=false,
+  breaklines=true,
+  numbers=left,
+  showstringspaces=false,
+  breakatwhitespace=true,
+  commentstyle=\color{pgreen},
+  keywordstyle=\color{pblue},
+  tabsize=4,
+  xleftmargin=8pt,
+  stringstyle=\color{pred},
+  basicstyle=\footnotesize\ttfamily,
+  moredelim=[il][\textcolor{pgrey}]{$$},
+  moredelim=[is][\textcolor{pgrey}]{\%\%}{\%\%}
+}
+
+\setbeamertemplate{itemize items}[square]
+\setbeamercovered{transparent}
+
+%% Commands
+
+\newcommand{\code}[1]{\texttt{#1}}
+
+\newcommand{\listing}[1]{
+	\begin{itemize}
+		\item[]\lstinputlisting[]{listings/#1}
+	\end{itemize}
+}
+
+\graphicspath{ {./images/} }
+\newcommand{\myfig}[2]{
+	\begin{minipage}[c]{\textwidth}
+		\begin{center}
+			\includegraphics[keepaspectratio,width=#2\textwidth]{#1}
+		\end{center}
+		\vspace{3mm}
+	\end{minipage}
+}
+
+\newcommand{\bb}[1]{\textbf{#1}}
+
+\newcommand{\slideItems}[1]{
+	\begin{itemize}
+		#1
+	\end{itemize}
+}
+
+\newcommand{\slide}[2]{
+	\begin{frame}{#1}
+		#2
+	\end{frame}
+}
+
+%% Document
+
+\title{Write once run anywhere}
+\subtitle{Native Mobile Apps for Android and iOS}
+\author{\href{https://www.fihlon.ch/}{Marcus Fihlon}}
+\institute[Fihlon]{\href{https://www.fihlon.ch/}{Scrum Master | Software Engineer | Lecturer | Speaker}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\newlength\someheight
+
+\slide{About Me}{
+	\begin{columns}
+    	\begin{column}{5cm}
+		\slideItems{
+			\item Scrum Master
+			\item Software Engineer
+			\item Lecturer
+			\item Speaker
+		}
+    	\end{column}
+	    \begin{column}{5cm}
+        	\myfig{McPringle}{0.8}
+    	\end{column}
+	\end{columns}
+	\href{https://www.fihlon.ch}{www.fihlon.ch} |
+	\href{https://github.com/McPringle}{github.com/McPringle} |
+	\href{http://hackergarten.net}{hackergarten.net}
+}
+
+\slide{Agenda}{
+	\setcounter{tocdepth}{1}
+	\tableofcontents
+}
+
+\section{Intro}
+
+\slide{Intro}{
+	\slideItems{
+		\item Develop Android apps using Java
+		\item Develop iOS apps using Objective-C or Swift
+		\item Develop apps for both systems is twice the work
+		\item Do the work once using hybrid frameworks
+		\item Whatever you do, you have to accept drawbacks
+		\item But wait -- we have 2016!?
+	}
+}
+
+\section{Technology}
+
+\slide{Java}{
+	\slideItems{
+		\item One language for all systems: Java
+		\item Same language on server and client
+		\item Thousands of libraries available
+		\item Very good tool support
+		\item Easy debugging
+		\item Excellent testing support
+	}
+}
+
+\slide{Java FX}{
+	\slideItems{
+		\item Java FX for the GUI
+		\item Java FX Ports for support of mobile systems
+		\item Based on OpenJFX
+		\item Applies Android and iOS specific changes
+		\item Supports hardware acceleration (Direct 3D, Open GL)
+		\item Supports CSS for styling
+		\item Create GUIs programmatically or using WYSIWYG editors
+	}
+}
+
+\slide{JavaFXPorts Gradle Plugin}{
+	\slideItems{
+		\item Supports and encapsulates Android build tools
+		\item Supports and encapsulates iOS build tools
+		\item Uses RoboVM AOT compiler to create native iOS app
+		\item Installs the app inside of simulators and emulators
+		\item Installs the app on mobile devices (phones, tablets)
+		\item Prepares packages ready to publish to native stores
+	}
+}
+
+\section{Support}
+
+\slide{Gluon}{
+	\slideItems{
+		\item Commercial support for Java FX on mobile
+		\item Additional services and products on top of Java FX
+		\slideItems{
+			\item Material Design controls
+			\item Data persistence
+			\item Data synchronization
+			\item Cloud connectors
+		}
+	}
+}
+
+\section{Demo}
+
+\section{Wrap-up}
+
+\slide{Conclusion}{
+	You should consider building your mobile app using Java FX Ports and RoboVM:
+	\slideItems{
+		\item Use your existing know how
+		\item Easy debugging
+		\item Easy testing
+		\item Easy styling
+		\item Runs fast
+		\item Access to countless libaries and frameworks
+	}
+	But don't forget: This is \bb{one} solution! You are the only one able to choose \bb{the} solution that suits your needs best!
+}
+
+\slide{The End}{
+	\begin{center}
+		\begin{huge}\bb{Thank You! Questions?}\end{huge}
+		
+		\qrcode[hyperlink,height=5cm]{http://bit.ly/write-once}
+		
+		\url{http://bit.ly/write-once}
+	\end{center}
+}
+
+\end{document}
