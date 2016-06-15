@@ -1,0 +1,4 @@
+compile(
+	'javax.money:money-api:1.0.1',
+	'org.javamoney:moneta:1.1'
+)
