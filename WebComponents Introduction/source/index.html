@@ -1,26 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>WebComponents Demo</title>
-    <link rel="import" href="bower_components/polymer/polymer.html"/>
-    <link rel="import" href="demo_components/server-list/server-list.html"/>
-    <style>
-        h1 {
-            text-align: center;
-        }
-        body {
-            font-family: 'Roboto', 'Noto', sans-serif;
-        }
-    </style>
-</head>
-<body>
-
-<h1>Aktuelle Serverlast</h1>
-
-<server-list></server-list>
-
-</body>
+  <head>
+    <title>Server Dashboard</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="manifest" href="/manifest.json"/>
+    <script src="/bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="/src/dashboard-app/dashboard-app.html"/>
+  </head>
+  <body>
+    <dashboard-app></dashboard-app>
+  </body>
 </html>
-
-

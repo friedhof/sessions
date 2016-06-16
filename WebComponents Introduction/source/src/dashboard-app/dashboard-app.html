@@ -1,0 +1,32 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html"/>
+<link rel="import" href="../../bower_components/paper-styles/typography.html"/>
+<link rel="import" href="../../bower_components/paper-material/paper-material.html"/>
+<link rel="import" href="../server-list/server-list.html"/>
+
+<dom-module id="dashboard-app">
+    <template>
+        <style>
+            :host {
+                display: block;
+            }
+            * {
+                font-family: 'Roboto', sans-serif;
+            }
+            paper-material {
+                margin: 2em;
+                padding: 0.5em 1em 0.5em 1em;
+            }
+        </style>
+
+        <paper-material elevation="5">
+            <h1>Server Dashboard</h1>
+            <server-list></server-list>
+        </paper-material>
+    </template>
+
+    <script>
+        Polymer({
+            is: 'dashboard-app'
+        });
+    </script>
+</dom-module>
