@@ -1,0 +1,164 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !BIB TS-program = biber
+
+\documentclass{beamer}
+\usepackage[cm-default,no-math]{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage[utf8x]{inputenc}
+\usepackage{listings}
+\usepackage{hyperref} 
+\usepackage{adjustbox}
+\usepackage{tcolorbox}
+\usepackage{pdfpages}
+\usepackage{multicol}
+\usepackage{cancel}
+\usepackage[autostyle=true,german=quotes]{csquotes}
+\usepackage{pifont}
+\usepackage{color}
+\usepackage{qrcode}
+
+\usetheme{m} % Use metropolis theme
+
+
+\definecolor{pblue}{rgb}{0.13,0.13,1}
+\definecolor{pgreen}{rgb}{0,0.5,0}
+\definecolor{pred}{rgb}{0.9,0,0}
+\definecolor{pgrey}{rgb}{0.46,0.45,0.48}
+
+\usepackage{listings}
+\lstset{language=Java,
+  frame=single,
+  showspaces=false,
+  showtabs=false,
+  breaklines=true,
+  numbers=left,
+  showstringspaces=false,
+  breakatwhitespace=true,
+  commentstyle=\color{pgreen},
+  keywordstyle=\color{pblue},
+  tabsize=4,
+  xleftmargin=8pt,
+  stringstyle=\color{pred},
+  basicstyle=\footnotesize\ttfamily,
+  moredelim=[il][\textcolor{pgrey}]{$$},
+  moredelim=[is][\textcolor{pgrey}]{\%\%}{\%\%}
+}
+
+\setbeamertemplate{itemize items}[square]
+\setbeamercovered{transparent}
+
+%% Commands
+
+\newcommand{\code}[1]{\texttt{#1}}
+
+\newcommand{\listing}[1]{
+	\begin{itemize}
+		\item[]\lstinputlisting[]{listings/#1}
+	\end{itemize}
+}
+
+\graphicspath{ {./images/} }
+\newcommand{\myfig}[2]{
+	\begin{minipage}[c]{\textwidth}
+		\begin{center}
+			\includegraphics[keepaspectratio,width=#2\textwidth]{#1}
+		\end{center}
+		\vspace{3mm}
+	\end{minipage}
+}
+
+\newcommand{\bb}[1]{\textbf{#1}}
+
+\newcommand{\slideItems}[1]{
+	\begin{itemize}
+		#1
+	\end{itemize}
+}
+
+\newcommand{\slide}[2]{
+	\begin{frame}{#1}
+		#2
+	\end{frame}
+}
+
+%% Document
+
+\title{Go for the Money! JSR-354}
+\subtitle{A quick introduction to the Java Money and Currency API}
+\author{\href{https://www.fihlon.ch/}{Marcus Fihlon}}
+\institute[Fihlon]{\href{https://www.fihlon.ch/}{Scrum Master | Software Engineer | Lecturer | Speaker}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\newlength\someheight
+
+\slide{You don't need to take pictures of the slides!}{
+	\myfig{papal_election.jpg}{1}
+	\tiny{Michael Sohn / AP}
+}
+
+\slide{About Me}{
+	\begin{columns}
+    	\begin{column}{5cm}
+			\begin{tiny}
+				\slideItems{
+					\setlength{\itemsep}{12pt}
+					\item
+						\begin{normalsize}\bb{Scrum Master}\end{normalsize} \\
+						\href{https://www.css.ch/}{CSS Insurance}
+					\item
+						\begin{normalsize}\bb{Software Engineer}\end{normalsize} \\
+						\href{https://www.css.ch/}{CSS Insurance} /
+						\href{https://github.com/McPringle}{Open Source Software}
+					\item
+						\begin{normalsize}\bb{Lecturer}\end{normalsize} \\
+						\href{http://www.teko.ch/}{TEKO Swiss Technical College}
+					\item
+						\begin{normalsize}\bb{Speaker}\end{normalsize} \\
+						\href{https://www.fihlon.ch/}{Conferences / User Groups / Meetups}
+				}
+			\end{tiny}
+    	\end{column}
+	    \begin{column}{5cm}
+        	\myfig{McPringle}{0.8}
+    	\end{column}
+	\end{columns}
+	\href{https://www.fihlon.ch}{www.fihlon.ch} |
+	\href{https://github.com/McPringle}{github.com/McPringle} |
+	\href{http://hackergarten.net}{hackergarten.net}
+}
+
+\slide{Agenda}{
+	\setcounter{tocdepth}{1}
+	\tableofcontents
+}
+
+\section{Intro}
+
+\section{Currency and Monetary Amounts}
+
+\section{Formatting and Parsing}
+
+\section{Exchange rates and Conversion}
+
+\section{Extensions}
+
+\section{Live Coding}
+
+\section{Wrap-up}
+
+\slide{The End}{
+	\begin{center}
+		\begin{huge}\bb{Thank You! Questions?}\end{huge}
+		
+		\qrcode[hyperlink,height=5cm]{http://bit.ly/…}
+		
+		\url{http://bit.ly/…}
+	\end{center}
+}
+
+\end{document}
