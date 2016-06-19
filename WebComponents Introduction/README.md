@@ -20,7 +20,7 @@ To fully understand this talk the attendees should have basic knowledge of HTML,
 
 |             |                      |
 | ----------- | -------------------- |
-| Duration:   | ~ 45 minutes         |
+| Duration:   | ~ 1 hour             |
 | Attendance: | 8+ attendees         |
 | Audience:   | web engineers        |
 | Level:      | beginner             |
