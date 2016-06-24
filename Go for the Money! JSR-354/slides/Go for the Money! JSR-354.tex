@@ -210,8 +210,140 @@
 
 \section{API}
 
+\slide{Currencies}{
+	\slideItems{
+		\item \code{Monetary}
+			\slideItems{
+				\item Get a currency by code or locale
+				\item Additional API for complex queries
+				\item Supports SPI to enhance functionality
+			}
+		\item \code{CurrencyUnit}
+			\slideItems{
+				\item Currency code (string and number)
+				\item Additional context information (e.g. type, capabilities)
+			}
+		\item \code{CurrencyQueryBuilder}
+			\slideItems{
+				\item Builder for complex queries for accesing currency units
+			}
+	}
+}
 
+\slide{Monetary Amounts}{
+	\slideItems{
+		\item \code{Monetary}
+			\slideItems{
+				\item Get a monetary amount by currency and value
+				\item Optionally specify an explicit factory
+				\item Or query for a suitable factory
+				\item Supports SPI to enhance functionality
+			}
+		\item \code{MonetaryAmount}
+			\slideItems{
+				\item Numeric value and currency
+				\item Arithmetic operations to do calculations
+				\item Multiple implementations
+				\item Interoperability rules
+				\item Additional context information (e.g. capabilities)
+			}
+		\item \code{MonetaryAmountFactoryQueryBuilder}
+			\slideItems{
+				\item Builder for complex queries for accesing monetary amout factories
+			}
+	}
+}
 
+\slide{Rounding}{
+	\slideItems{
+		\item \code{Monetary}
+			\slideItems{
+				\item Get a rounding operator
+				\item Optionally specify a locale
+				\item Or query for a suitable rounding operator
+				\item Supports SPI to enhance functionality
+			}
+		\item \code{MonetaryRounding}
+			\slideItems{
+				\item Extends \code{MonetaryOperator}
+				\item Multiple implementations
+				\item Additional context information
+			}
+		\item \code{RoundingQueryBuilder}
+			\slideItems{
+				\item Builder for complex queries for accesing rounding operators
+			}
+	}
+}
+
+\slide{Conversion with currency conversion}{
+	\slideItems{
+		\item \code{MonetaryConversions}
+			\slideItems{
+				\item Get a currency conversion by currency code or unit
+				\item Or query for a suitable currency conversion
+				\item Supports SPI to enhance functionality
+			}
+		\item \code{CurrencyConversion}
+			\slideItems{
+				\item Multiple implementations
+				\item Source and target currency
+				\item Conversion factor
+				\item Additional context information
+				\item Unidirectional
+			}
+		\item \code{ConversionQueryBuilder}
+			\slideItems{
+				\item Builder for complex queries for accesing currency conversions
+			}
+	}
+}
+
+\slide{Conversion with exchange rate provider}{
+	\slideItems{
+		\item \code{MonetaryConversions}
+			\slideItems{
+				\item Get an exchange rate provider
+				\item Or query for a suitable currency conversion
+				\item Supports SPI to enhance functionality
+			}
+		\item \code{ExchangeRateProvider} $\rightarrow$ \code{ExchangeRate}
+			\slideItems{
+				\item Multiple implementations
+				\item Source and target currency
+				\item Conversion factor
+				\item Additional context information
+				\item Unidirectional
+			}
+		\item \code{ConversionQueryBuilder}
+			\slideItems{
+				\item Builder for complex queries for accesing exchange rate providers
+			}
+	}
+}
+
+\slide{Formatting and parsing}{
+	\slideItems{
+		\item \code{MonetaryFormats}
+			\slideItems{
+				\item Get a monetary amount format
+				\item Optionally specify a locale
+				\item Or query for a suitable monetary amount format
+				\item Supports SPI to enhance functionality
+			}
+		\item \code{MonetaryAmountFormat}
+			\slideItems{
+				\item Multiple implementations
+				\item Additional context information
+				\item Format monetary amounts
+				\item Parse monetary amounts
+			}
+		\item \code{AmountFormatQueryBuilder}
+			\slideItems{
+				\item Builder for complex queries for accesing monetary amount formats
+			}
+	}
+}
 
 \section{Code}
 
