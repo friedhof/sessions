@@ -357,6 +357,30 @@
 
 \section{Wrap-up}
 
+\slide{Validation}{
+	\href{https://github.com/zalando/money-validation}{Money Validation by Zalando}
+	\slideItems{
+		\item Validate monetary amounts
+		\item Uses existing, standardized constraints
+		\item Offers additional, more expressive custom constraints
+		\item Can be use with any \href{http://beanvalidation.org/}{Bean Validation} implementation
+	}
+	\listing{validation.java}
+}
+
+\slide{Compatibility}{
+	\slideItems{
+		\item Supports
+			\slideItems{
+				\item Java Micro Edition
+				\item Java Standard Edition
+				\item Java Enterprise Edition
+			}
+		\item Compatible with Java 8+
+		\item Backport available for Java 7
+	}
+}
+
 \slide{Maven}{
 	\code{pom.xml}
 	\listing{pom.xml}
