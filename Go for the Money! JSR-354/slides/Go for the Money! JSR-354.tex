@@ -156,7 +156,57 @@
 
 \section{Intro}
 
+\slide{Money}{
+	\begin{quote}
+		A large proportion of the computers in this world manipulate money, so it’s always puzzled me that money isn’t actually a first class data type in any mainstream programming language. The lack of a type causes problems, the most obvious surrounding currencies…
+	\end{quote}
+	\tiny{\href{http://martinfowler.com/eaaCatalog/money.html}{Martin Fowler}}
+}
 
+\slide{Before}{
+	\slideItems{
+		\item \code{float}, \code{double} (since Java 1)
+		\item \code{java.math.BigDecimal} (since Java 1.1)
+		\item \code{java.text.DecimalFormat} (since Java 1.1)
+		\item \code{java.util.Currency} (since Java 1.4)
+	}
+}
+
+\slide{Motivation}{
+	\slideItems{
+		\item Monetary values are a key feature for many applications
+		\item \code{java.util.Currency} is a structure for ISO-4217 only
+		\item No standard value type to represent a monetary amount
+		\item No support for currency arithmetic or conversion
+		\item No support for historic or virtual currencies
+		\item \code{java.text.DecimalFormat} lacks flexibility
+	}
+}
+
+\slide{Requirements}{
+	\slideItems{
+		\item Easy \bb{addition} and \bb{modification} of currencies
+		\item Currencies need a \bb{context} and should be \bb{client-aware}
+		\item Standard API for \bb{money amounts}, \bb{rounding}, \bb{conversions}
+		\item Easy, flexible, complex, individual \bb{formatting} and \bb{parsing}
+		\item Clearly defined \bb{extension points}
+		\item Follow the \bb{design principles} of the Java platform
+		\item Compatibility with \bb{Standard Edition} and \bb{Micro Edition}
+		\item No external \bb{dependencies}
+		\item \bb{Interoperability} with existing artifacts
+		\item Support \bb{functional} programming style
+	}
+}
+
+\slide{Four years of hard work}{
+	\slideItems{
+		\item JSR-354 started early 2012
+		\item JSR-354 early draft review in 2013
+		\item Reference implementation startet late 2013
+		\item Final release of JSR-354 early 2015
+		\item Final release of reference implementation early 2015
+	}
+}
 
 \section{API}
 
