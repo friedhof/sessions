@@ -26,4 +26,4 @@ To fully understand this talk the attendees should have basic knowledge of HTML,
 | Level:      | beginner             |
 | Handout:    | slides, source files |
 
-[https://www.fihlon.ch/talks/webcomponents/](https://www.fihlon.ch/talks/webcomponents/)
+[https://www.fihlon.ch/talks/web-components-introduction/](https://www.fihlon.ch/talks/web-components-introduction/)
