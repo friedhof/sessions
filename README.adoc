@@ -6,6 +6,7 @@ In this repository I collect all materials from my own sessions (Talks, Workshop
 == Talks
 
 * link:Go%20for%20the%20Money!%20JSR-354[Go for the Money! JSR-354]
+* link:Java%208%20Date%20and%20Time%20API[Java 8 Date and Time API]
 * link:WebComponents%20Introduction[WebComponents Introduction]
 * link:Write%20once%20run%20anywhere[Write once run anywhere]
 

@@ -1,0 +1,6 @@
+= Java 8 Date and Time API
+Marcus Fihlon, https://www.fihlon.ch/
+
+The JSR-310 provides a new and advanced API to handle date and time values based on the experience with the two old APIs (Date and Calendar). In this talk I illustrate this new API in a quick overview and show you how easy this new API is to use. In a live coding session I show the new entities for date and time values and the new way how to modify and how to calculate with them.
+
+To fully understand this talk the attendees should have basic knowledge of Java. After the talk all attendees get a link to download the slides and source files of the live coding part.

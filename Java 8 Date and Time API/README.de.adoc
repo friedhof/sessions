@@ -1,0 +1,6 @@
+= Java 8 Date and Time API
+Marcus Fihlon, https://www.fihlon.ch/
+
+Der JSR-310 bietet eine neue und verbesserte API für die Arbeit mit Datums- und Zeitangaben. Das Ziel dieses JSR war, die Erfahrungen mit den ersten beiden APIs (Date und Calendar) in ein erweitertes und umfassenderes Modell zur Manipulation von Zeit- und Datumswerten einfliessen zu lassen.
+
+In diesem Vortrag erläutere ich diese neue API und während eines Live Coding zeige ich, wie einfach dieses API zu verwenden ist. Von der Nutzung der neuen speziellen Entitäten für Zeit- und Datumswerte bis hin zur Manipulation derselben präsentiere ich entsprechende Code-Beispiele. Sowohl der während des Vortrags erstellte Code als auch die Präsentation wird den Teilnehmenden zur Verfügung gestellt.
