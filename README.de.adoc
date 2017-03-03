@@ -1,0 +1,4 @@
+= About me
+Marcus Fihlon, https://www.fihlon.ch/
+
+Marcus Fihlon ist Agile Coach und Software Entwickler bei der CSS Versicherung in Luzern. Zusätzlich unterrichtet er seit einigen Jahren an der TEKO Schweizerische Fachschule in Olten. Marcus entwickelt seit mehr als drei Jahrzehnten Software und ist dabei seit den späten Neunzigern hauptsächlich im Java Ökosystem unterwegs. Er ist Gründungsmitglied und Organisator des monatlich stattfindenden Hackergarten in Luzern und engagiert sich sehr in mehreren Open Source Projekten. In diesem Jahr wurde Marcus in den Vorstand der Java User Group Switzerland gewählt und ist in der Zentralschweiz für die Organisation von Vorträgen und Workshops zuständig.

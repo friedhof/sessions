@@ -1,0 +1,7 @@
+= Web Components Introduction
+Marcus Fihlon, https://www.fihlon.ch/
+
+== Abstract
+
+* link:README.en.adoc[English]
+* link:README.de.adoc[German]

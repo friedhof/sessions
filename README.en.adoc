@@ -1,0 +1,4 @@
+= About me
+Marcus Fihlon, https://www.fihlon.ch/
+
+Marcus Fihlon is an Agile Coach and Software Engineer at CSS Insurance in Lucerne. He also lectures at TEKO Swiss Technical Collage in Olten and is a speaker at conferences and user groups. He has been developing software for more than three decades and has worked with Java since the late 90s. Marcus is the grounding member and organizer of the monthly Hackergarten in Lucerne and is involved in several open source projects. Since 2017, he is member of the board of the Java User Group Switzerland and responsible for organizing events and workshops in central Switzerland.

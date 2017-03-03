@@ -1,0 +1,19 @@
+= Einführung in Web Components – Was ist das und wie geht das?
+Marcus Fihlon, https://www.fihlon.ch/
+
+Die Zeiten, zu denen man als Java-Entwickler ausschliesslich Java-Technologien für Benutzeroberflächen eingesetzt hat, sind schon lange vorbei. Über die Jahre hinweg hat HTML immer mehr Einzug gehalten und kann nun als fester Bestandteil des Java-Ökosystems betrachtet werden. Doch HTML ist nicht gleich HTML – seit der ersten Version, die vor nunmehr 25 Jahren erschien, hat sich sehr viel getan.
+
+Web Components sind ein neuer W3C-Standard bestehend aus vier Spezifikationen, die es erlauben, wiederverwendbare Widgets und Komponenten für den Einsatz auf Webseiten und in Webapplikationen zu erstellen. Die Intention hinter dem Standard ist es, die Idee komponentenbasierter Softwareentwicklung in das World Wide Web zu bringen. Web Components erlauben die Kapselung von und die Interoperabilität zwischen HTML-Elementen.
+
+== Agenda
+
+* Was sind Web Components?
+* Die vier Spezifikationen im Überblick
+* Unterstützung der “großen” Webbrowser
+* Web Components Libraries
+* Demo: Web Components in der Anwendung
+* Demo: Eigene Web Components erstellen
+
+Mit diesem Vortrag möchte ich den Sinn der Web Components vermitteln und aufzeigen, wie Entwickler mit dessen Hilfe effizient moderne, einfach zu wartende Webseiten und Webanwendungen erstellen können. Einen großen Teil des Vortrags nimmt die Demo ein, in der ich mittels riskantem Live-Coding den Einsatz von Web Components genauso am praktischen Beispiel zeige, wie die Entwicklung eigener Komponenten.
+
+Um diesen Vortrag vollständig verstehen und den meisten Nutzen herausholen zu können, solltest du Basiswissen im Bereich HTML, CSS und JavaScript mitbringen. Im Anschluss an den Vortrag gibt es einen Link, unter dem du sowohl die Vortragsfolien als auch den Quellcode des Live-Coding herunterladen kannst.

@@ -1,0 +1,7 @@
+= Write once run anywhere – Mobile Apps for Android und iOS
+Marcus Fihlon, https://www.fihlon.ch/
+
+== Abstract
+
+* link:README.en.adoc[English]
+* link:README.de.adoc[German]

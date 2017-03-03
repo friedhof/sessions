@@ -1,0 +1,15 @@
+= Session Material
+Marcus Fihlon, https://www.fihlon.ch/
+
+In this repository I collect all materials from my own sessions (Talks, Workshops, Streams) I created.
+
+== Talks
+
+* link:Go%20for%20the%20Money!%20JSR-354[Go for the Money! JSR-354]
+* link:WebComponents%20Introduction[WebComponents Introduction]
+* link:Write%20once%20run%20anywhere[Write once run anywhere]
+
+== About me
+
+* link:README.en.adoc[English]
+* link:README.de.adoc[German]
