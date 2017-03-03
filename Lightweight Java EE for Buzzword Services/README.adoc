@@ -1,0 +1,7 @@
+= Lightweight Java EE for Buzzword Services
+Marcus Fihlon, https://www.fihlon.ch/
+
+== Abstract
+
+* link:README.en.adoc[English]
+* link:README.de.adoc[German]
