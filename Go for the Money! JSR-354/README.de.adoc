@@ -1,7 +1,7 @@
 = Go for the Money! JSR-354
 Marcus Fihlon, https://www.fihlon.ch/
 
-In letzter Zeit entwickelt sich Java wieder schneller weiter und es haben viele lang ersehnte Erweiterungen Einzug gehalten. Die bekanntesten sind sicherlich die neue Date & Time API sowie Lambdas und Streams. Gerade für Business-Anwendungen, die häufig mit Geldbeträgen und oft auch unterschiedlichen Währungen arbeiten müssen, ist eine weitere Neuerung ziemlich hilfreich: JSR-354 — Money and Currency API
+In letzter Zeit entwickelt sich Java wieder schneller weiter und es haben viele lang ersehnte Erweiterungen Einzug gehalten. Die bekanntesten sind sicherlich die neue Date & Time API sowie Lambdas und Streams. Gerade für Business-Anwendungen, die häufig mit Geldbeträgen und oft auch unterschiedlichen Währungen arbeiten müssen, ist eine weitere Neuerung ziemlich hilfreich: JSR-354 – Money and Currency API
 
 Was hat es nun mit diesem JSR auf sich, weshalb wird eine Money and Currency API benötigt? Nach der Beantwortung dieser Fragen gibt es einen raschen Überblick über die neue API, deren Packages und Klassen. Ich präsentieren den neuen Weg, mit Geldbeträgen zu rechnen, diese zu formatieren, zu parsen, den Umgang mit verschiedenen Währungen und auch das Umrechnen zwischen ihnen.
 

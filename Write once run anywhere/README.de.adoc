@@ -1,4 +1,4 @@
-= Write once run anywhere – Mobile Apps for Android und iOS
+= Write once run anywhere – Mobile Apps für Android und iOS
 Marcus Fihlon, https://www.fihlon.ch/
 
 Viele Entwickler mobiler Apps kennen das Dilemma mit unterschiedlichen mobilen Systemen: Unterschiedliche Sprachen! Was nun tun mit der eigenen App-Idee? Mehrfach in unterschiedlichen Sprachen entwickeln oder auf Container-Frameworks wie Apache Cordova mit HTML/CSS/JavaScript setzen?
