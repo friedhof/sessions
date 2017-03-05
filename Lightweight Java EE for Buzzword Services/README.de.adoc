@@ -1,12 +1,10 @@
-= Lightweight Java EE for Buzzword Services
+= Lightweight Java EE for <Buzzword> Services
 Marcus Fihlon, https://www.fihlon.ch/
 
 Java EE kann man getrost nicht mehr als Hype bezeichnen, es ist seit 1999 ein bekannter Mitspieler im Java Ökosystem. Eine lange Zeit – andererseits wird es mit 18 Jahren gerade einmal volljährig.
 
-"Moderne" Entwickler erstellen Buzzword Services, sie benutzen "state of the art" und "lightweight" Frameworks. Aber wann ist ein Service "Micro", wann ist ein Framework leichtgewichtig? Wie passt Java EE in die heutige moderne Welt der Software-Entwicklung?
+"Moderne" Entwickler erstellen Micro oder Nano Services, sie benutzen "state of the art" und "lightweight" Frameworks. Aber wann ist ein Service Micro oder Nano? Wann ist ein Framework leichtgewichtig? Wie passt Java EE in die heutige moderne Welt der Software-Entwicklung?
 
-Java EE ist die perfekte Wahl wenn es darum geht, Microservices zu entwickeln! In diesem Vortrag werde ich antreten, meine durchaus gewagte Behauptung zu untermauern. Live on Stage werde ich mit nur wenigen Zeilen Code und ohne den Overhead von Frameworks zwei Microservices entwickeln, welche untereinander kommunizieren und sie in einer lokalen Docker Cloud laufen lassen, wo sie ihrem Bedarf entsprechend skaliert werden können.
+Meiner Meinung nach ist Java EE die perfekte Wahl, wenn es darum geht, Micro oder Nano Services zu entwickeln! In diesem Vortrag werde ich antreten, meine durchaus gewagte Behauptung zu untermauern. Live on Stage werde ich mit nur wenigen Zeilen Code und ohne den Overhead von Frameworks zwei Microservices entwickeln, welche untereinander kommunizieren und sie in einer lokalen Docker Cloud laufen lassen, wo sie ihrem Bedarf entsprechend skaliert werden können.
 
 Coding, building, deploying, scaling: schnell und effizient!
-
-In diesem Vortrag gibt es sehr viel live entwickelten Quelltext zu sehen. Kein Hyping. Kein Bashing. Nur schnelle und effiziente Entwicklung. Dieser Vortrag wurde ausschliesslich für aufgeschlossenes und vorurteilsfreies Publikum freigegeben. Bei Überempfindlichkeit gegen gelegentliche Profaniert sind Augen und Ohren zu schliessen.

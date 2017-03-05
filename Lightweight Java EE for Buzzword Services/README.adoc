@@ -1,4 +1,4 @@
-= Lightweight Java EE for Buzzword Services
+= Lightweight Java EE for <Buzzword> Services
 Marcus Fihlon, https://www.fihlon.ch/
 
 == Abstract

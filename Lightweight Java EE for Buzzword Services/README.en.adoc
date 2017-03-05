@@ -1,10 +1,8 @@
-= Lightweight Java EE for Buzzword Services
+= Lightweight Java EE for <Buzzword> Services
 Marcus Fihlon, https://www.fihlon.ch/
 
 Java EE is not a hype. It is a well known player since 1999 – a quite long time but Java EE is just about to come off age.
 
-"Modern" developers create buzzword services, they use "state of the art" and "lightweight" frameworks. But when is a service "micro"? When is a framework lightweight? How does Java EE fit in this modern world of software development?
+"Modern" developers create micro or nano services, they use "state of the art" and "lightweight" frameworks. But when is a service micro or nano? When is a framework lightweight? How does Java EE fit in this modern world of software development?
 
-Java EE is a perfect choice for writing micro services. In this talk I try to prove my statement. Live on stage I write two services with RESTful JSON APIs with only a few lines of code which communicate with each other and run the services using a local Docker cloud where you can see how these services can be scaled up and down to manage fluctuating loads. Coding, building, deploying, scaling: fast and efficient!
-
-This talk is code driven with a lot of live coding. No hyping. No bashing. Just fast and efficient coding. It has been approved for open audiences only. Hypersensitivity to occasional profanity requires covering ears and eyes.
+In my opinion Java EE is a perfect choice for writing micro or nano services. In this talk I try to prove my statement. Live on stage I write two services with RESTful JSON APIs with only a few lines of code which communicate with each other and run the services using a local Docker cloud where you can see how these can be scaled up and down to manage fluctuating loads. Coding, building, deploying, scaling: fast and efficient!
