@@ -4,7 +4,7 @@
 
 <dom-module id="dashboard-server-list">
     <template>
-        <iron-ajax auto url="/source/demo/api/metrics.json" handle-as="json"
+        <iron-ajax auto url="../../api/metrics.json" handle-as="json"
                    last-response="{{ajaxResponse}}"></iron-ajax>
         <template is="dom-repeat" items="[[ajaxResponse]]">
             <dashboard-info-panel serverdata="{{item}}"></dashboard-info-panel>
