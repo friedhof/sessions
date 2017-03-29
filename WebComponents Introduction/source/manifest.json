@@ -1,6 +1,0 @@
-{
-  "name": "dashboard",
-  "short_name": "dashboard",
-  "start_url": "/",
-  "display": "standalone"
-}
